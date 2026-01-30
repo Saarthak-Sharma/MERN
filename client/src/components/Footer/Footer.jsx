@@ -3,7 +3,7 @@ import "./Footer.css";
 export const Footer = () => {
     return (
         <footer>
-            <p>@Technical 2025</p>
+            <p>@TechGrow Academy</p>
         </footer>
     )
 }
