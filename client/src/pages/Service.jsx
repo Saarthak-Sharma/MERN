@@ -15,14 +15,14 @@ export const Service = () => {
 
   const getCourseNotesUrl = (serviceName) => {
     const notesUrls = {
-      'HTML': 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
-      'CSS': 'https://www.adobe.com/support/products/enterprise/knowledgecenter/media/c4611_sample_explain.pdf',
-      'JavaScript': 'https://eloquentjavascript.net/Eloquent_JavaScript.pdf',
-      'React': 'https://www.robinwieruch.de/react-book.pdf',
-      'Node.js': 'https://goalkicker.com/NodeJSBook/NodeJSNotesForProfessionals.pdf',
-      'MongoDB': 'https://goalkicker.com/MongoDBBook/MongoDBNotesForProfessionals.pdf'
+      'Web Development': 'https://mrcet.com/downloads/digital_notes/IT/WEB%20APPLICATION%20DEVELOPMENT.pdf',
+      'E-commerce Website Development': 'https://backup.pondiuni.edu.in/storage/dde/dde_ug_pg_books/E-%20Commerce.pdf',
+      'Responsive Web Design': 'https://www.lpude.in/SLMs/Master%20of%20Computer%20Applications/Sem_4/DECAP784_RESPONSIVE%20WEB%20DESIGN.pdf',
+      'Mobile App Development': 'https://mrcet.com/downloads/digital_notes/it/mobile%20application%20development%20digital%20notes(r18a1207).pdf',
+      'WordPress Website Development': 'https://www.tutorialspoint.com/wordpress/wordpress_tutorial.pdf',
+      'UI/UX Design Services': 'https://rwskill.edu.in/wp-content/uploads/2025/09/uiuxgraphic.pdf'
     };
-    return notesUrls[serviceName] || 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+    return notesUrls[serviceName];
   };
 
   const handleAccess = (serviceName, isFree) => {
@@ -130,8 +130,6 @@ export const Service = () => {
                 <li>Introduction to {selectedService}</li>
                 <li>Basic Concepts & Fundamentals</li>
                 <li>Practical Examples & Projects</li>
-                <li>Advanced Topics & Best Practices</li>
-                <li>Final Assessment & Certification</li>
               </ul>
               <p className="notes-info"><strong>Duration:</strong> 4-6 weeks</p>
               <p className="notes-info"><strong>Level:</strong> Beginner to Advanced</p>
