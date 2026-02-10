@@ -3,9 +3,32 @@
     padding: 4.2rem 2.4rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 ul{
     display: flex;
     gap: 3.2rem;
+    align-items: center;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li a {
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+ul li a:hover {
+    background: rgba(16, 185, 129, 0.1);
+    transform: translateY(-2px);
+}
+
+ul li a.active {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(134, 239, 172, 0.15) 100%);
+    font-weight: 600;
 }

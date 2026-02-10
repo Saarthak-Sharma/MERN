@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../store/Auth";
+import { toast } from 'react-toastify';
 
      const defaultContactFromData = {
         username:"",
@@ -65,11 +66,11 @@ import { useAuth } from "../store/Auth";
                 setContact(defaultContactFromData);
                 const data = await response.json();
                 console.log("Contact Data:", data);
-                alert("message send successfuly");
+                toast.success("Message sent successfully!");
                 
             };
         } catch (error) {
-            alert("message not sent");
+            toast.error("Failed to send message. Please try again.");
             console.log(error)
         }
 

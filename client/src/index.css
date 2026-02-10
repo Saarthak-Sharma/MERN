@@ -7,17 +7,24 @@
 }
 
 :root {
-  --bg-color: #f4f3ff;
-  --btn-color: #646cff;
-  --dark-color: #242424;
-  --helper-color: #99b9ff;
+  --bg-color: #f0f9f4;
+  --btn-color: #10b981;
+  --dark-color: #064e3b;
+  --helper-color: #86efac;
 }
 
 html {
   font-size: 62.5%;
-}
+} 
 
 /*? base style */
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -220,7 +227,7 @@ button:hover {
 
 a:hover,
 a.active {
-  color: #535bf2;
+  color: #10b981;
 }
 
 /* pseduo elements  */
@@ -241,15 +248,15 @@ a.active {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #064e3b;
     background-color: #ffffff;
   }
   a:hover,
   a.active {
-    color: #747bff;
+    color: #10b981;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f0f9f4;
   }
 }
 
@@ -269,13 +276,13 @@ a.active {
   animation: animate 10s ease-in-out infinite;
   background: -webkit-repeating-linear-gradient(
     -60deg,
-    #71b7e6,
-    var(--btn-color),
-    #b98acc,
-    #ee8176,
-    #b98acc,
-    var(--btn-color),
-    #9b59b6
+    #10b981,
+    #34d399,
+    #6ee7b7,
+    #86efac,
+    #6ee7b7,
+    #34d399,
+    #10b981
   );
   background-size: 500%;
   background-clip: text;
@@ -408,6 +415,13 @@ a.active {
     flex-direction: column;
     gap: 3.2rem;
     border: 0.2rem solid var(--helper-color);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 35px rgba(16,185,129,0.25);
+    }
 
     & .card-img {
       text-align: center;
@@ -421,6 +435,9 @@ a.active {
 
     & .card-details {
       padding: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
 
       & .grid p {
         font-size: 1.4rem;
@@ -429,6 +446,23 @@ a.active {
       & h2 {
         font-size: 3.2rem;
         margin: 1.2rem 0 2.4rem 0;
+        height: 4rem;
+        overflow: hidden;
+      }
+
+      & p {
+        flex: 1;
+        margin-bottom: 2rem;
+      }
+
+      & button {
+        transition: all 0.3s ease;
+      }
+
+      & button:hover {
+        background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
       }
     }
   }
@@ -479,4 +513,80 @@ a.active {
       }
     }
   }
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.popup {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 360px;
+  text-align: center;
+}
+
+.html-course {
+  padding: 3rem 0;
+}
+
+.html-course-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: #f9f9f9;
+}
+
+.course-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.html-course-wrapper {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+}
+
+.html-course-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.popup-overlay-blocked {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.btn-secondary {
+  background-color: #555;
+  margin-left: 10px;
 }
