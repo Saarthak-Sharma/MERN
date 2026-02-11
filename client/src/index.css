@@ -246,19 +246,7 @@ a.active {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #064e3b;
-    background-color: #ffffff;
-  }
-  a:hover,
-  a.active {
-    color: #10b981;
-  }
-  button {
-    background-color: #f0f9f4;
-  }
-}
+
 
 /* error page  */
 #error-page {
@@ -337,6 +325,20 @@ a.active {
   color: #fff;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #064e3b;
+    background-color: #ffffff;
+  }
+  a:hover,
+  a.active {
+    color: #10b981;
+  }
+  button {
+    background-color: #f0f9f4;
+  }
+}
+
 /** -----------------------
 ** registration section css
 ** -------------------------  */
@@ -345,7 +347,7 @@ a.active {
   padding: 0 3.2rem;
 
   & .container {
-    background-color: #fff;
+    background-color: transparent;
     padding-top: 3.2rem;
     align-items: center;
 

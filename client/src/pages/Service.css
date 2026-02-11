@@ -4,8 +4,8 @@
 }
 
 .main-heading {
-  color: #1e3a8a;
-  text-shadow: 0 2px 4px rgba(30, 58, 138, 0.3);
+  color: #10b981;
+  text-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
 }
 
 /* Service Card */
@@ -16,7 +16,7 @@
 }
 
 .service-provider {
-  color: #1e40af;
+  color: #10b981;
 }
 
 .service-price {
@@ -28,7 +28,7 @@
 }
 
 .service-price.paid {
-  color: #1e3a8a;
+  color: #10b981;
 }
 
 .service-title {
@@ -90,8 +90,8 @@
 }
 
 .popup-title {
-  color: #1e3a8a;
-  text-shadow: 0 1px 3px rgba(30, 58, 138, 0.2);
+  color: #10b981;
+  text-shadow: 0 1px 3px rgba(16, 185, 129, 0.2);
   margin-bottom: 1rem;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .popup-text-strong {
-  color: #1e3a8a;
+  color: #10b981;
 }
 
 .popup-btns {
@@ -117,7 +117,7 @@
 }
 
 .notes-heading {
-  color: #1e3a8a;
+  color: #10b981;
 }
 
 .notes-list {

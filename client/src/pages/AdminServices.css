@@ -52,6 +52,7 @@
   font-size: 15px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   background: #f0f9f4;
+  color: #1e293b;
 }
 
 .service-form input:focus,
@@ -60,6 +61,7 @@
   border-color: #10b981;
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
   background: white;
+  color: #1e293b;
 }
 
 .service-form textarea {
@@ -115,6 +117,7 @@
   padding: 18px 20px;
   text-align: left;
   border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
 }
 
 .admin-services th {
