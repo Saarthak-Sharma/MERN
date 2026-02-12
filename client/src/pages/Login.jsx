@@ -35,12 +35,8 @@ export const Login = () => {
       body: JSON.stringify(user)
     });
 
-    console.log("login form", response);
-    
-
     if(response.ok) {
       const responseData = await response.json();
-      console.log(responseData);
       //store token in local storage
       storeTokenInLS(responseData.token);
       toast.success("Login Successful!");

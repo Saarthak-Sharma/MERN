@@ -6,8 +6,8 @@ import { AuthProvider } from './store/Auth.jsx'
 
 createRoot(document.getElementById('root')).render(
   <AuthProvider>
-  <StrictMode>
-    <App />
-  </StrictMode>
+    <StrictMode>
+      <App />
+    </StrictMode>
   </AuthProvider>
-)
+);

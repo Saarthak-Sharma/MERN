@@ -2,11 +2,8 @@ import { NavLink } from "react-router-dom";
 import { Analytics } from "../components/Analytics";
 import { useAuth } from "../store/Auth";
 
-
-
-
 export const About = () => {
-const {user} = useAuth();
+  const { user } = useAuth();
   return (
     <>
       <main>
